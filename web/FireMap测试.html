@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>风刃·上帝之手-爆气表</title>
   <meta charset="utf-8">
@@ -9,257 +10,1664 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
   <script src="https://www.w3schools.cn/lib/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    em{
-            font-style: normal;
-        }
+    em {
+      font-style: normal;
+    }
 
-        .checked 
-        {
-            color: orange;
-        }
+    .checked {
+      color: orange;
+    }
+
     /* 移除导航栏的默认 margin-bottom 和圆角边框 */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* 设置网格的高度，使 .sidenav 可以是 100%（根据需要调整）*/
-    .row.content {height: 450px}
-    
+    .row.content {
+      height: 450px
+    }
+
     /* 设置灰色背景颜色和 100% 高度 */
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
     }
-    
+
     /* 设置黑色背景颜色，白色文本和一些填充 */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
+
     /* 在小屏幕上，将 sidenav 和网格的高度设置为 'auto' */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
+
+      .row.content {
+        height: auto;
+      }
     }
-     /* =========================================================== */
-     * {
-            box-sizing: border-box;
-        }
 
-        .gq{
-            font-weight: 700;
-        }
+    /* =========================================================== */
+    * {
+      box-sizing: border-box;
+    }
 
-        .gs{
-            color: #707070;
-            font-size: 14px;
-        }
+    .gq {
+      font-weight: 700;
+    }
 
-        .xj{
-            color: black;
-        }
+    .gs {
+      color: #707070;
+      font-size: 14px;
+    }
 
-        .red{
-            color: red;
-        }
+    .xj {
+      color: black;
+    }
 
-        .redd {
-            color: rgb(255, 0, 0);
-        }
+    .red {
+      color: red;
+    }
 
-        .bulee {
-            color: rgb(0, 102, 255);
-        }
+    .redd {
+      color: rgb(255, 0, 0);
+    }
 
-        h4{
-            color: #707070;
-            margin-bottom: 0px;
-        }
+    .bulee {
+      color: rgb(0, 102, 255);
+    }
 
-        .ms {
-            margin-left: 15px;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 22px;
-        }
-        .miaos {
-            margin-top: 12px;
-           
-        }
+    h4 {
+      color: #707070;
+      margin-bottom: 0px;
+    }
 
-        #myInput {
-            width: 100%;
-            font-size: 16px;
-            padding: 8px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-        }
+    .ms {
+      margin-left: 15px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 22px;
+    }
 
-        #myUL {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+    .miaos {
+      margin-top: 12px;
 
-        #myUL li a {
-            border: 1px solid #ddd;
-            margin-top: -1px;
-            /* 防止双边框 */
-            background-color: #f6f6f6;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 16px;
-            color: black;
-            display: block
-        }
+    }
 
-        #myUL li a:hover:not(.header) {
-            background-color: #eee;
-        }
+    #myInput {
+      width: 100%;
+      font-size: 16px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+
+    #myUL {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myUL li a {
+      border: 1px solid #ddd;
+      margin-top: -1px;
+      /* 防止双边框 */
+      background-color: #f6f6f6;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      display: block
+    }
+
+    #myUL li a:hover:not(.header) {
+      background-color: #eee;
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">风刃·上帝之手</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">风刃·上帝之手</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../Wind Blade Home.html">首页</a></li>
+          <li><a href="#">关于</a></li>
+          <li class="active"><a href="#">爆气表</a></li>
+          <li><a href="#">联系方式</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">关于</a></li>
-        <li class="active"><a href="#">爆气表</a></li>
-        <li><a href="#">联系方式</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <!-- <p><a href="#">链接</a></p>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <!-- <p><a href="#">链接</a></p>
       <p><a href="#">链接</a></p>
       <p><a href="#">链接</a></p> -->
-    </div>
-    <div class="col-sm-8 text-left"> 
+      </div>
+      <div class="col-sm-8 text-left">
         <h2>2024风刃·上帝之手舞团第一赛季【零食大作战】</h2>
         <p>在输入字段中键入歌曲名/歌手名/星级：</p>
 
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="歌曲名 / 歌手名 / 星级"
-            title="Type in a name">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="歌曲名 / 歌手名 / 星级" title="Type in a name">
 
         <ul id="myUL">
-            <h4>#</h4>
-            <li data-toggle="modal" data-target="#myModal"><a href="#"><em class="gq">《异次龙魂》(《QQ炫舞手游》金标稀世同名概念曲)<span style="float: right;" class="fa fa-star checked"><em class="xj"> 9</em></span></em><br><em class="gs">窦佳嫄</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;"> 140</em></span></a></li>
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                
-                  <!-- 模态内容-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <p class="ts" style="text-align: center; font-size: 16px; font-weight: 700;">您当前匹配到的歌曲是</p>
-                      <p style="text-align: center; font-size: 15px; font-weight: 700; line-height: 10px;"><em class="bulee">单双排</em> <em class="redd">星动</em></p>
-                      <p style="text-align: center; font-size: 23px; font-weight: 700;">《异次龙魂》(《QQ炫舞手游》金标稀世同名概念曲)</p><hr>
-                      <h5><span class="label label-danger">星动模式</span> <span class="label label-danger">难度6星</span> <span class="label label-primary">单排爆点</span></h5>  
-                        <div style=" width: 100%; height: 55px;">
-                            <div
-                                style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
-                                B672
-                            </div>
-                            <div class="miaos" style=" float: left;">
-                                <em class="ms">【开始】1轨条尾巴&4轨左滑键</em><br>
-                                <em class="ms">【结束】B段结束,2轨单点</em>
-                            </div>
-                        </div>
-                        <hr>
-                      <h5><span class="label label-danger">星动模式</span> <span class="label label-danger">难度6星</span> <span class="label label-primary">双排爆点</span></h5>
-                      <div style="width: 100%; height: 55px;">
-                        <div
-                            style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
-                            B593
-                        </div>
-                        <div class="miaos" style=" float: left;">
-                            <em class="ms">【开始】4轨单点</em><br>
-                            <em class="ms">【结束】3轨单点</em>
-                        </div>
-                    </div><br>
-                    <div style=" width: 100%; height: 55px;">
-                        <div
-                            style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
-                            B672
-                        </div>
-                        <div class="miaos" style=" float: left;">
-                            <em class="ms">【开始】1轨条尾巴&4轨左滑键</em><br>
-                            <em class="ms">【结束】B段结束,2轨单点</em>
-                        </div>
-                    </div>                         
-                </div>      
+          <h4>#</h4>
+          <li data-toggle="modal" data-target="#myModal"><a href="#"><em class="gq">
+                《异次龙魂》(《QQ炫舞手游》金标稀世同名概念曲)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    9</em></span></em><br><em class="gs">
+                窦佳嫄</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- 模态内容-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <p class="ts" style="text-align: center; font-size: 16px; font-weight: 700;">您当前匹配到的歌曲是</p>
+                  <p style="text-align: center; font-size: 15px; font-weight: 700; line-height: 10px;"><em
+                      class="bulee">单双排</em> <em class="redd">星动</em></p>
+                  <p style="text-align: center; font-size: 23px; font-weight: 700;">《异次龙魂》(《QQ炫舞手游》金标稀世同名概念曲)</p>
+                  <hr>
+                  <h5><span class="label label-danger">星动模式</span> <span class="label label-danger">难度6星</span> <span
+                      class="label label-primary">单排爆点</span></h5>
+                  <div style=" width: 100%; height: 55px;">
+                    <div style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
+                      B672
+                    </div>
+                    <div class="miaos" style=" float: left;">
+                      <em class="ms">【开始】1轨条尾巴&4轨左滑键</em><br>
+                      <em class="ms">【结束】B段结束,2轨单点</em>
+                    </div>
+                  </div>
+                  <hr>
+                  <h5><span class="label label-danger">星动模式</span> <span class="label label-danger">难度6星</span> <span
+                      class="label label-primary">双排爆点</span></h5>
+                  <div style="width: 100%; height: 55px;">
+                    <div style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
+                      B593
+                    </div>
+                    <div class="miaos" style=" float: left;">
+                      <em class="ms">【开始】4轨单点</em><br>
+                      <em class="ms">【结束】3轨单点</em>
+                    </div>
+                  </div><br>
+                  <div style=" width: 100%; height: 55px;">
+                    <div style="line-height: 70px; float: left; font-weight: 700; font-size: 18px;">
+                      B672
+                    </div>
+                    <div class="miaos" style=" float: left;">
+                      <em class="ms">【开始】1轨条尾巴&4轨左滑键</em><br>
+                      <em class="ms">【结束】B段结束,2轨单点</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-            </div>
-            <li><a href="#"><em class="gq">ペガサス幻想<span style="float: right;" class="fa fa-star checked"><em class="xj"> 9</em></span></em><br><em class="gs">MAKE-UP</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;"> 165</em></span></a></li>
-            <li><a href="#"><em class="gq">50 Ways to Say Goodbye<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em class="gs">Train</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;"> 140</em></span></a></li>
+          </div>
+          <li><a href="#"><em class="gq">ペガサス幻想<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    9</em></span></em><br><em class="gs">MAKE-UP</em><span
+                style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;"> 165</em></span></a></li>
+
+
+          <li><a href="#"><em class="gq red">
+                50 Ways to Say Goodbye <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Train </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+          <h4>A</h4>
+          <li><a href="#"><em class="gq red">
+                Abu Dhabi <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Mikolas Josef </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                爱投罗网 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                罗志祥 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                A Life <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                ZHANGYE/Panta.Q </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Apple Is A <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                T-ara </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                曖昧スクリーム <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                平野绫 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                ABC(feat. Sophia Black) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Polyphia/Sophia Black </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Anicca <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                原田 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================BBBB -->
+          <h4>B</h4>
+
+          <li><a href="#"><em class="gq red">
+                Baby <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Justin Bieber </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Bad Romance <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Lady Gaga </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Bo Peep Bo Peep <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                T-ara </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                BONAMANA <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Super Junior </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Boys <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Charli XCX </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Bright Spring <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                M2U </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                白骑士 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                QQ炫舞原创 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                背对背拥抱 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                林俊杰 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Bing Bing <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Crayon Pop </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Brave Heart <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                宫崎步 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                表白 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                萧亚轩 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Baby Boy <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                王心凌 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Birthday <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Red Velvet </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Bubble Pop! <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                泫雅 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                不如回家喝自来水 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                刘烨溦 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Be My Baby <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Wonder Girls </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Butter Fly <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                和田光司 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Beautiful days <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                LOVE PSYCHEDELICO(爱的魔幻) </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <!-- =============================================================CCC -->
+          <h4>C</h4>
+
+          <li><a href="#"><em class="gq red">
+                cheers <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                blackbear/Wiz Khalifa </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Clouds <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                李浩玮 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                此生过半(DJ阿卓版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                豆包 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                错过 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Tiam/吴鉴格 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Candy Pop <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                TWICE </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                chAngE <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                miwa </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                CLEAR <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                坂本真绫 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                CHANGE! MY WORLD <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                山北早紀/若井友希/澁谷梓希 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Crossing Field <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                LiSA </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================DDD -->
+
+          <h4>D</h4>
+
+          <li><a href="#"><em class="gq">
+                大风吹倒梧桐树 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                候泽润 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                大哉问 (THE BIG WHY) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                袁娅维TIA RAY </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                等到你 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                庄东茹 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                短暂的快乐却着迷 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                队长 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                杜绝 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                马梓皓 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Destination Freestyle (feat. King Vvibe) <span style="float: right;" class="fa fa-star checked"><em
+                    class="xj"> 10</em></span></em><br><em class="gs">
+                Crash Adams/King Vvibe </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                等一个人来 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                承桓 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                多想拥抱你呀 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                贰拾 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Dear John <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                比莉 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Drama <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                aespa </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                底线 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                山止川行/庄淇文29 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                堕天之役《QQ炫舞手游》稀世同名概念曲 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                林亦双/王凯琪 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Dear Future Husband <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Meghan Trainor</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Delight <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Avenue Beat </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Dura <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Daddy Yankee </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                大艺术家(困难版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                蔡依林 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                等不到的你 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                一只白羊 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                电梯战神 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                宝石Gem </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================EEE -->
+
+          <h4>E</h4>
+
+          <li><a href="#"><em class="gq red">
+                饿狼传说 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                张学友 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Eyes On You <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Nicky Youre </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================FFF -->
+
+          <h4>F</h4>
+
+          <li><a href="#"><em class="gq">
+                风言风语 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                庄东茹 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Feels Like Love <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Syn Cole/MIYA MIYA </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                反复失眠 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                杨胖雨 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Faded(困难版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Alan Walker </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Fight For You <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                潘玮柏 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Firefly <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Abba Teens </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Flower Dance(困难版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                DJ OKAWARI </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================GGG -->
+
+          <h4>G</h4>
+
+          <li><a href="#"><em class="gq red">
+                Good Time <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Owl City </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Get It On The Floor <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                DMX </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Gee <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                少女时代 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                该怎么遗忘 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                池鱼 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================HHH -->
+
+          <h4>H</h4>
+
+          <li><a href="#"><em class="gq red">
+                Here With You <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Asher Book </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                花 feat. 花譜 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Guiano/花譜 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                画桥 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                十口白水 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                忽远忽近 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                王唯一(九姨太) </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                HELLP <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                中岛美嘉 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                好久没见 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                哨孟定/宋成Song's voice/Zy </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                好想大声说喜欢你 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                BAAD </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                回不去的何止时间 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                吖毛 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                回忆·渐冷 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Big Cole </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                火花 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                高耀太 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Hacking to the Gate <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                伊藤加奈子 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Heart Shaker <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                TWICE </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Hey Baby你是我的 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                李佳薇 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Heartbreak Heard Around The World <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Jacob Latimore/T-Pain </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <!-- =============================================================III -->
+
+          <h4>I</h4>
+
+          <li><a href="#"><em class="gq red">
+                I'll Be Alright <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Chris Holsten </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                I Knew You Were Trouble <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Taylor Swift </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                I Want My Tears Back <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                NIGHT WISH </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                In Your Eyes <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                INNA/Yandel </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================JJJ -->
+
+          <h4>J</h4>
+
+          <li><a href="#"><em class="gq red">
+                Jar Of Love <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                曲婉婷 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                九月底 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                余佳运 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                家乡烟火 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                庄东茹 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                敬往事一杯 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                候泽润 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                镜中花 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                任子墨/HIGH5-马思涵SAI </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                禁绝边境线 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Walkure </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                JELLY JELLY <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                TWICE </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Just Like Fire <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                P!nk </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                借河畔的风 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                K.D </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                今天阳光就是特别耀眼特别和谐 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                曾沛慈/韦礼安 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                绝望性:ヒーロー治療薬 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                スズム/そらる </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================KKK -->
+
+          <h4>K</h4>
+
+          <li><a href="#"><em class="gq red">
+                KNOCK KNOCK <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                TWICE </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Kinetic(The Crystal Method vs Dada Life) <span style="float: right;" class="fa fa-star checked"><em
+                    class="xj"> 10</em></span></em><br><em class="gs">
+                英雄联盟 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                卡农 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Pachelbel </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                克罗地亚狂想曲 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                马克西姆 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                空想神话 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                妖精帝国 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                快乐的铺满 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                我杀猪了(何浪Ciel) </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================LLL -->
+
+          <h4>L</h4>
+
+          <li><a href="#"><em class="gq">
+                Look What You Made Me Do <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Taylor Swift </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Love So Soft <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Kelly ClarKson </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                沦陷晚风 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                陈默之 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Letting Go <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                蔡健雅 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Lunisolar <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                SHAUN </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                冷焰 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                虹HONG </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                冷风派对 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                袁小葳 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                凉凉(困难版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                杨宗纬/张碧晨 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                L.I.E <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                EXID </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                恋爱啦 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                艾辰 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                六兆年と一夜物语<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                鹿乃 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                落樱语 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                王子健 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Loner <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Maggie Lindemann </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                林中鸟(困难版) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                葛林 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                落魄时惊鸿 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                闻人听書_</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================MMM -->
+
+          <h4>M</h4>
+
+          <li><a href="#"><em class="gq">
+                Mimimi <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Serebro </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                没有选择 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                胡彦斌 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                没来得及 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                承桓 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                MY舞☆TONIGHT <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Aqours </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                满怀 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                旺仔小乔 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                莫问归期 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                蒋雪儿 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================NNN -->
+
+          <h4>N</h4>
+
+          <li><a href="#"><em class="gq">
+                NOBODY <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                田小娟/WINTER/LIZ </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                你是我捡到的光 <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                尚辰 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                逆浪千秋 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                言和 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                你,有没有过 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                林俊杰 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                你瞒我瞒 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                陈柏宇 </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================OOO -->
+
+          <h4>O</h4>
+
+          <li><a href="#"><em class="gq red">
+                one day before i die (Explicit) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                nobody likes you pat </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                One Night <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                DUNNAR </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                偶像万万岁 <span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                TimeZ </em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Oh My My!(In Love Again) <span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Walk Off the Earth/Train </em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <!-- =============================================================PPP -->
+          <h4>P</h4>
+
+
+          <li><a href="#"><em class="gq">
+                Play 我呸<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                蔡依林</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================QQQ -->
+
+          <h4>Q</h4>
+
+
+          <li><a href="#"><em class="gq">
+                浅显易懂<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                杜治民</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                潜意识<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                LBI利比(时柏尘)</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                七年的爱<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                金贤政</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                清明上河图<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                李玉刚</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                青鸟<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                生物股长</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                去Club吧<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Heize</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================RRR -->
+
+          <h4>R</h4>
+
+
+          <li><a href="#"><em class="gq">
+                Right Now<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                rihanna</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                如果雨之后<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Eric周兴哲</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Red Dress<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                The Cheers Cheers</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Rolling Star<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                YUI</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Rookie<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Red Velvet</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                热恋夏季<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                杨郡安</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================SSS -->
+
+          <h4>S</h4>
+
+
+          <li><a href="#"><em class="gq">
+                盛世之疆<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                弦子/李常超(Lao乾妈)/HITA/小爱的妈/萧忆情Alex/裂天</em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Supposed to Be a Love Song<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Anson Seabra</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                烧掉一片天空<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                张妙格</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                什么什么<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                蔡依林</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                顺其自然(Been Through)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                EXO</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                所有人都在玩手机<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                马赛克乐队</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq ">
+                Shine Your Light(Explicit)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Family of Things</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                SHIORI<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                ClariS</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Sparkling Daydream<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                ZAQ</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                SWEET TALKER<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                TWICE</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                生死江湖<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                李常超(Lao乾妈)</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                十万英尺/Montage<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                蒙太奇Whisky/说唱者联盟</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                宿命<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                en</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                STRONG<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                SPYAIR</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                水仙<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                王心凌</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================TTT -->
+
+          <h4>T</h4>
+
+
+          <li><a href="#"><em class="gq">
+                Telephone<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Lady GaGa</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Timeber<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Pitbull</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                提拉米苏<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                新乐尘符/李思雨</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                to the beginning<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Kalafina</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Thrill,Risk,Heartless<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                LiSA</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Tower Of Heaven(You Are Slaves)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Feint</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================UUU -->
+
+          <h4>U</h4>
+
+
+          <li><a href="#"><em class="gq">
+                Up To Me<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                宋茜</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================VVV -->
+
+          <h4>V</h4>
+
+
+          <li><a href="#"><em class="gq red">
+                VHS<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Thomas Rhett</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Very Very Very<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                I.O.I</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Victory(困难版)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Bond</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================WWW -->
+
+          <h4>W</h4>
+
+
+          <li><a href="#"><em class="gq red">
+                What Do You Mean?<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Justin Bieber</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                What Makes You Beautiful<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                One Direction</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Wolves<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Selena Fomez/Marshmello</em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Wonderland<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                gugudan</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                王妃<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                萧敬腾</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                忘记<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                郑润泽</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                我还好<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                庄东茹</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                我期待的不是雪(而是有你的冬天)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                张妙格</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                WHY<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                4MINUTE</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                Wild Heart<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Deep Chills/Devinity/RAIKO</em><span style="float: right; font-weight: 700;">BPM<em
+                  style="font-weight: 100;"> 140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                晚风遇见你<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                陆杰awr</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                我不能留在你身旁<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                傅梦彤</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Whistle(困难版)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Flo Rida</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Why So Lonely<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Wonder Girls</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                晚风的轮廓<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                陆杰awr</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                我的未来式(十周年合唱版)<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                爱情公寓全体</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Wake Up!<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                AAA</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                无敌<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                张恒远</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <!-- =============================================================XXX -->
+           <h4>X</h4>
+          <li><a href="#"><em class="gq red">
+                香薰蜡烛<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                徐秉龙</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                小情歌<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                苏打绿</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                小星星<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                汪苏泷</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                星辰不坠落<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                蓝心羽</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                幸福的节拍<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                杨丞琳</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                修炼爱情<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                林俊杰</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                炫舞国度<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                BOX.COM</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                学不会遗忘<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                庄东茹</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                享受缺德人生<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                歪歪超/有只芥子</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+          <!-- ===============================YYYY -->
+          <h4>Y</h4>
+          <li><a href="#"><em class="gq">
+                一直想问你<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                陈村长</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                YESTERDAY<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                Block B</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                Your Gentleman<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                CLAUDIA</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                夜影<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                金玟岐</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                一吻天荒<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                胡歌</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                永步开封的汽水<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                木秦</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                月球引动潮汐<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                也可/庄淇文29</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                邮递马车<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Hermann Necke</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+          <!-- =========================ZZZ -->
+          <h4>Z</h4>
+          <li><a href="#"><em class="gq">
+                怎么会不遗憾呢<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                程今</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                怎样说清此刻心情<span style="float: right;" class="fa fa-star checked"><em class="xj">
+                    10</em></span></em><br><em class="gs">
+                BY2</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                着迷<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                全孝盛</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                走不出这大雨<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                Bunnyi_ll</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq red">
+                这个姿势<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                姚焯菲</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                栀子花的约定<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                林三七</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                字字句句<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                卢卢快闭嘴</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                怎叹(DJ沈念版)<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                郑鱼</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                做鬼脸<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                大塚愛</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                直到世界终结(困难版)<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                WANDS</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
+
+          <li><a href="#"><em class="gq">
+                灼熱のユートピア<span style="float: right;" class="fa fa-star checked"><em class="xj"> 10</em></span></em><br><em
+                class="gs">
+                森永真由美</em><span style="float: right; font-weight: 700;">BPM<em style="font-weight: 100;">
+                  140</em></span></a></li>
         </ul>
 
-        
 
 
-    </div>
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <p>6星歌曲：62首<br>
-                    7星歌曲：44首<br>
-                    8星歌曲：22首<br>
-                    9星歌曲：46首<br>
-                    10星歌曲：43首</p>
-            </div>
-            <div class="well">
-                <p>制作者:快手琉辉</p>
-            </div>
+
+      </div>
+      <div class="col-sm-2 sidenav">
+        <div class="well">
+          <p>6星歌曲：62首<br>
+            7星歌曲：44首<br>
+            8星歌曲：22首<br>
+            9星歌曲：46首<br>
+            10星歌曲：43首</p>
         </div>
+        <div class="well">
+          制作时间:2024年6月12日<br>
+          更新内容:<br>
+          1.歌曲全部写出并且显示<br>
+          2.还未加入爆点查询<br>
+          3.会尽快在6月前完成<br>
+          4.呜呜呜<br>
+          <p>制作者:快手琉辉</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
 </body>
 <script>
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue, b ,txtValue2;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByClassName("gq")[0];
-            b = li[i].getElementsByClassName("gs")[0];
-            txtValue = a.textContent || a.innerText;
-            txtValue2 = b.textContent || b.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
+  function myFunction() {
+    var input, filter, ul, li, a, i, txtValue, b, txtValue2;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByClassName("gq")[0];
+      b = li[i].getElementsByClassName("gs")[0];
+      txtValue = a.textContent || a.innerText;
+      txtValue2 = b.textContent || b.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
     }
-    </script>
-</html>
+  }
+</script>
 
+</html>
